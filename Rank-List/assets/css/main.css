@@ -114,7 +114,7 @@ text-align: center;
     border-radius: 5px;
     position: relative;
     padding: 1.8em; /*Espacio en blanco en los bordes*/
-    overflow: scroll;
+    
 }
 
 .position{
@@ -164,13 +164,14 @@ text-align: center;
 @media (min-height:550px){
     .content{
         height: 500px;
+        overflow: scroll;
     }
 }
 
 @media (max-width:600px){
     .content{
         padding: 1em;
-
+        overflow: scroll;
     }
     td{
         display: block;
