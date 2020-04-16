@@ -1,0 +1,188 @@
+
+html{
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+
+a{
+text-decoration: none;
+font-weight: 600;
+color:#00c6fb;
+}
+
+a:hover{
+    opacity: 0.6;
+}
+
+
+
+.title{
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+/*Bordes en título*/
+.title-item{
+    /*
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #2E78ED;
+     */
+     border-bottom: solid 2px #2E78ED; /*En una sola declaracion
+      a traves de una Shorthand propertie en el borde inferior*/
+    padding-bottom: 1.5em;
+    font-size: 1.5em;
+    
+    
+    
+
+}
+.paragraph{
+  line-height: 1.9em; 
+  font-weight: 500; 
+  text-align: justify;
+}
+
+.table{
+width: 100%;
+border-spacing: 0;
+}
+
+.table td, .table th{
+
+padding: 1em;
+text-align: left;
+border:none;
+
+}
+
+.table tr:nth-child(even){
+    background-color: #B9D9FB;
+}
+
+tr td:nth-child(6){
+text-align: center;
+
+}
+
+.table th:nth-child(6){
+    text-align: center;
+}
+
+.container
+{
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    height: 100vh;
+    display: flex; /* Que los elementos que contiene adoptan su posicion a traves de
+    la herramienta FLEXBOX */
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    
+}
+
+.close{
+    height: 35px;
+    width: 35px;
+    color:white;
+    border-radius: 50%;
+    background-color: #2E78ED;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) ;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.content{
+    max-width: 960px; /* Ancho Maximo al que puede llegar el elemento*/
+    max-height: 500px;
+    height: 80vh;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) ;
+    border-radius: 5px;
+    position: relative;
+    padding: 1.8em; /*Espacio en blanco en los bordes*/
+    overflow: scroll;
+}
+
+.position{
+    background-color: #2E78ED;
+    color:white;
+ /*Se aplica en todos los lados*/
+    padding: 0.3em 0.5em 0.3em 0.5em;
+    font-weight: 600;
+
+/* SHP: Arriba dereche abajo izquierda*/
+    border-radius: 5px;
+    margin-right: 0.5em;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) ;
+  
+    
+}
+
+.imdb{
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-weight: bold; 
+    font-size: 1.2em !important;
+    color:#FFBD19;
+    display: inline-block;
+    margin-top: 1em;
+    
+}
+
+.main-image{
+   float: left; /*Hace que el texto fluya a la derecha de la imagen*/
+   margin-right: 2em;
+   height: 350px;
+}
+
+.fa-heart{
+    color:#E91C32;
+}
+.fa-heart-broken{
+    color:#E91C32;
+}
+.fa-star{
+    color:#FFBD19;
+}
+.fa-star-half-alt{
+    color:#FFBD19;
+}
+
+@media (min-height:550px){
+    .content{
+        height: 500px;
+    }
+}
+
+@media (max-width:600px){
+    .content{
+        padding: 1em;
+
+    }
+    td{
+        display: block;
+        width: 100%;
+    }
+    th{
+        display: none;
+    }
+    td:nth-of-type(1)
+    {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #2E78ED;
+    }
+}
