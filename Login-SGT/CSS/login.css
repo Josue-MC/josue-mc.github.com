@@ -57,6 +57,7 @@ h2{
     background-color: #CEECF2;
 }
 
+
 .btn{
     background-color: #F20F38 !important;
     border-color: #F20F38 !important;
@@ -90,4 +91,11 @@ h2{
         height: 37vh !important;
         
     }
+}
+
+@media (max-width: 576px) { 
+   .cont2{
+       overflow: scroll !important;
+       
+   }
 }
